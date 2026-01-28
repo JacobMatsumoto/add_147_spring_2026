@@ -17,11 +17,11 @@
 		{
 			"name": "My SFTP",
 			"type": "sftp",
-			"host": "localhost",
+			"host": "jmatsumoto.mccweb.net",
 			"port": 22,
-			"user": "admin",
-			"password": "123456",
-			"dir": "/",
+			"user": "jmatsumoto",
+			"password": "ratvo5-takTym-ceqzej",
+			"dir": "/public_html",
 			"baseDir": "/",
 			"privateKey": null,
 			"passphrase": null
@@ -29,11 +29,11 @@
 		{
 			"name": "My FTP",
 			"type": "ftp",
-			"host": "localhost",
+			"host": "jmatsumoto.mccweb.net",
 			"port": 21,
-			"user": "admin",
-			"password": "123456",
-			"dir": "/",
+			"user": "jmatsumoto",
+			"password": "ratvo5-takTym-ceqzej",
+			"dir": "/public_html",
 			"baseDir": "/",
 			"transferDataType": "binary",
 			"secure": false
