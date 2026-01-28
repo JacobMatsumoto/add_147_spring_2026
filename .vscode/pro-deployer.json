@@ -12,7 +12,11 @@
 		".git/**/*",
 		".vscode/**/*"
 	],
-	"include": [],
+	"include": [        
+		"index.html",
+        "css/**/*",
+        "images/**/*",
+        "scripts/**/*"],
 	"targets": [
 		{
 			"name": "My SFTP",

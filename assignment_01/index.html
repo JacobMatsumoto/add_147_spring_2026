@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/script.js"></script>
+
+        <script>
+            function header_text_swap() {
+                document.getElementById("changing_p").innerHTML = "The third img is JayJay"
+            }
+
+        </script>
+</head>
+
+<body>
+    <div id="home">
+        <div class="container">
+            <h1 id="title">Assignment 1</h1>
+        </div>
+        <div id="about_me">
+            <img id="cat" src="images/buddybuddy.jpeg" alt="My cat(s)">
+            <button onclick="swap_to_img_1()">pic 1</button>
+            <button onclick="swap_to_img_2()">pic 2</button>
+            <button onclick="swap_to_img_3()">pic 3</button>
+            <button onclick="img_width()">widen img</button>
+            <button onclick="text_restore()">restore text</button>
+            <button onclick="text_swap()">change text js file</button>
+            <button onclick="header_text_swap()">change text header</button>
+            <button onclick="text_color_swap()">change text color</button>
+            <button onclick="hide_img()">hide img</button>
+            <button onclick="show_img()">show img</button>
+
+            <h2>The cats</h2>
+            <p id="changing_p"></p>
+            <script>
+                document.getElementById("changing_p").innerHTML = "The first img is Buddy Buddy"
+            </script>
+            <p>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

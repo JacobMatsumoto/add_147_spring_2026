@@ -1,0 +1,169 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: darkgray;
+    padding: 0px;
+    margin: 0px;
+    background-color: #24003e;
+
+}
+
+/* h2{
+    text-align: center;
+    padding-left: 80px;
+
+}
+p{
+    text-align: center;
+    padding-left: 920px;
+}
+img{
+    /* border: 2px solid #6A0DAD; */
+/* padding-left: 200px;
+    padding-top: 50px; */
+
+/* } */
+#about_me img {
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    display: block;
+    border: 2px solid #6A0DAD;
+
+}
+
+#about_me h2 {
+    font-size: xx-large
+}
+
+#about_me p {
+    font-size: x-large;
+    padding: 15px;
+}
+
+#games img {
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    display: block;
+    border: 2px solid #6A0DAD;
+
+}
+
+#games h2 {
+    font-size: xx-large
+}
+
+#games p {
+    font-size: x-large;
+    padding: 15px;
+}
+
+#future img {
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    display: block;
+    border: 2px solid #6A0DAD
+}
+
+#future h2 {
+    font-size: xx-large
+}
+
+#future p {
+    font-size: x-large;
+    padding: 15px;
+}
+
+#cooking img {
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    display: block;
+    border: 2px solid #6A0DAD;
+
+}
+
+#cooking h2 {
+    font-size: xx-large
+}
+
+#cooking p {
+    font-size: x-large;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a,
+.container {
+    text-align: center;
+    text-decoration: none;
+    background-color: #6A0DAD;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    color: ivory;
+    border-radius: 20px;
+
+}
+
+#home {
+    background-color: #24003e;
+    width: auto;
+    height: auto;
+}
+
+#games {
+    background-color: #24003e;
+}
+
+#future {
+    background-color: #24003e;
+}
+
+
+.container {
+
+    width: 60%;
+    margin: auto;
+    border: solid #6A0DAD;
+    padding: 20px;
+    background: #D8BFD8;
+
+}
+
+nav a:hover,
+.top:hover {
+    color: #24003e;
+    background: ivory;
+    text-decoration: underline
+}
+
+#title {
+    columns: black;
+}
+
+#console {
+    clear: both;
+}
+
+#laptop {
+    clear: both;
+}
+
+#list {
+    list-style: decimal;
+    font-size: x-large;
+}
+
+h1 {
+    color: #24003e
+}
