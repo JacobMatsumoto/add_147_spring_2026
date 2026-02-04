@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript With Forms</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/my_script.js"></script>
+</head>
+
+<body onload="initialize()">
+
+    <header>
+        <h1>JavaScript and Forms</h1>
+    </header>
+    <main class="container">
+        <form>
+            <div class="top">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="fname"><br>
+                <p id="today"></p>
+                <p>&nbsp;</p>
+
+                <label for="rooms">Welcome to the Online Cafe</label>
+            </div>
+
+            <div class="menu_container">
+                <div class="menu" id="mains">
+                    <h3>Mains</h3>
+                    <label for="spaghetti"># of spaghetti:</label>
+                    <input type="text" id="spaghetti" value="0" /> <br />
+                    <label for="burger"># of burgers:</label>
+                    <input type="text" id="burger" value="0" /> <br />
+                    <label for="blt"># of blts:</label>
+                    <input type="text" id="blt" value="0" /> <br />
+                    <label for="hotdog"># of hotdogs:</label>
+                    <input type="text" id="hotdog" value="0" /> <br />
+                    <label for="corndog"># of corndogs:</label>
+                    <input type="text" id="corndog" value="0" /> <br />
+                    <label for="main_total">Mains total cost:</label>
+                    <input type="text" id="main_total" value="0" /> <br />
+
+                </div>
+
+                <div class="menu" id="sides">
+                    <h3>Sides</h3>
+                    <label for="fries"># of fries:</label>
+                    <input type="text" id="fries" value="0" /> <br />
+                    <label for="curds"># of cheese curds:</label>
+                    <input type="text" id="curds" value="0" /> <br />
+                    <label for="tots"># of tots:</label>
+                    <input type="text" id="tots" value="0" /> <br />
+                    <label for="mac"># of Mac&Cheese:</label>
+                    <input type="text" id="mac" value="0" /> <br />
+                    <label for="chips"># of chips:</label>
+                    <input type="text" id="chips" value="0" /> <br />
+                    <label for="side_total">Sides total cost:</label>
+                    <input type="text" id="side_total" value="0" /> <br />
+                </div>
+
+                <div class="menu" id="drinks">
+                    <h3>Drinks</h3>
+                    <label for="coke"># of cokes:</label>
+                    <input type="text" id="coke" value="0" /> <br />
+                    <label for="sprite"># of sprites:</label>
+                    <input type="text" id="sprite" value="0" /> <br />
+                    <label for="tea"># of teas:</label>
+                    <input type="text" id="tea" value="0" /> <br />
+                    <label for="lemonade"># of lemonades:</label>
+                    <input type="text" id="lemonade" value="0" /> <br />
+                    <label for="water"># of waters:</label>
+                    <input type="text" id="water" value="0" /> <br />
+                    <label for="drinks_total">Drinks total cost:</label>
+                    <input type="text" id="drinks_total" value="0" /> <br />
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button type="button" onclick="estimate()">Get Estimate!</button>
+                <h3>Estimate:</h3>
+                <p id="estimate"></p>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
