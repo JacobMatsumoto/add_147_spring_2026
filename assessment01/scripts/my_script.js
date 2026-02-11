@@ -51,6 +51,6 @@ function estimate() {
     document.getElementById("drinks_total").value = drinks_cost;
 
     let total_bill = drinks_cost + side_cost + main_cost;
-    document.getElementById("estimate").innerHTML = "Hello " + name + ", your total will be $" + total_bill;
+    document.getElementById("estimate").innerHTML `` = "Hello " + name + ", your total will be $" + total_bill;
 
 }
