@@ -85,7 +85,7 @@ function start() {
 
     switch(answer){
         case 10:
-            document.getElementById("switch").innerHTML = "Yes! 10+0=10";
+            document.getElementById("switch").innerHTML = "correct";
             break;
         case 5:
             document.getElementById("switch").innerHTML = "where'd you get 5 from?";
