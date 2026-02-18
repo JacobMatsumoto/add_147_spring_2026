@@ -1,5 +1,5 @@
-// declare and initialize array !readme this uses some stuff we hadn't learned yet and also the video doesn't fix any issues. 
-//you can see around 25:30 she guesses a p and it still counts down. Nothing got solved. Incredibly frustrating I'm just venting, sorry I got it eventually.
+// declare and initialize array 
+//this uses some stuff we hadn't learned yet and also the video doesn't fix any issues. you can see around 25:30 she guesses a p and it still counts down. Nothing got solved. Incredibly frustrating I'm just venting, sorry I got it eventually.
 let game = ["PANCAKES","WAFFLES","OMELETTE","HASHBROWNS","TOAST","EGGS","BACON","SAUSAGE","BAGEL","BURRITO"];
 let choice = Math.floor(Math.random() * 10);
 let answer = game[choice];
