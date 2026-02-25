@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body onload="setup()">
+    <div class="container">
+        <header class="row">
+            <h1>Hot or Cold? Guess between 1-1000</h1>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Guess a number!</h2>
+                    <p>
+                        within 5 = On fire! <br>
+                        within 10 = Very hot! <br>
+                        within 50 = Hot <br>
+                        within 100 = Warm <br>
+                        within 200 = cool <br>
+                        within 300 = cold <br>
+                        within 500 = very cold <br>
+                        within 750 = insanely cold <br>
+                        outside 751-999 = frozen <br>
+
+                    </p>
+                    <p id="number">
+
+                    </p>
+                    <p id=""></p>
+                    <p id="guesses"></p>
+                </div>
+                <div class="col-6">
+                    <p id="hot_or_cold">I'll let you know if you're hot or cold!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="col-6">
+                    <form>
+                        <label for="guess">Guess a number</label>
+                        <input type="text" id="guess" width=5>
+                        <button type='button' id="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <h2>guessed numbers</h2>
+                    <p id="guessed"></p>
+                </div>
+
+            </div>
+    </div>
+
+    </main>
+    </div>
+    <script src="scripts/script.js"></script>
+    <footer>
+        <p>Jacob Matsumoto</p>
+    </footer>
+</body>
+
+
+</html>
