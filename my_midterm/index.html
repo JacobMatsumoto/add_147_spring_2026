@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- A lot of this is frankensteined from assignments we did and from add103 for bootstrap reminders +use code I can share my final project if you
+     from that class if you would like it. Other than that I adapted how to do the form from hangman and the task class stuff from the classes assignment today-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes Example</title>    
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="entry" class="col-md-6">
+                <form>
+                    <label for="task_title">Title of Task:</label><br>
+                    <input type="text" id="title">
+
+                    <br><br><label for="description">Description of Task:</label><br>
+                    <input type="text" id="description" >
+
+
+                    <br><br><button type='button' id="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-md-1">
+
+            </div>
+
+
+            <div id="tasks" class="col-md-5">
+                <h1>Tasks</h1>
+                <p id="class1"></p>
+                <p id="class2"></p>
+                <p id="class3"></p>
+                <p id="class4"></p>
+                <p id="class5"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>Jacob Matsumoto</footer>
+    <script src="my_script.js"></script>
+</body>
+</html>

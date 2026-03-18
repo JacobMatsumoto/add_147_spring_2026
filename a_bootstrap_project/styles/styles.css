@@ -1,0 +1,410 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+space
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark_primary: #512da8;
+    --light_primary: #d1c4e9;
+    --primary_color: #673ab7;
+    --light_text: #ffffff;
+    --accent_color: #9e9e9e;
+    --primary_text: #212121;
+    --secondary_text: #757575;
+    --divider_color: #bdbdbd;
+    --main_text: "Ovo", sans-serif;
+    --header_text: "Lato", cursive;
+}
+
+body {
+    background-color: var(--light_primary);
+    color: var(--primary_text);
+    font-family: var(--main_text);
+}
+
+header,
+footer {
+    background-color: var(--dark_primary);
+    text-align: center;
+    color: var(--accent_color);
+    padding: 20px;
+    font-family: var(--header_text);
+}
+
+h1, h2 {
+    color: var(--primary_text);
+    font-family: var(--header_text);
+}
+
+.container {
+    width: 80%;
+    background: var(--divider);
+    border: 2px solid var(--primary_color);
+    margin: 20px auto;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark_primary);
+    font-weight: bold;
+    margin: 20px 50px;
+}
+
+a:hover {
+    color: var(--primary_color);
+    text-decoration: underline;
+}
+
+.ovo-regular {
+    font-family: "Ovo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+/*
+gap......................................................
+*/
+img {
+    padding: 10px;
+    background: var(--dark_primary);
+    border-radius: 10px;
+    border: 2px solid var(--primary_text);
+}
+h1, h2{
+    color: var(--primary_text);
+    font-size: xx-large;
+    margin: 10px;
+    /* text-align: center; */
+}
+
+p {
+    color: var(--primary_text);
+    font-size: xx-large;
+    margin: 5px;
+}
+
+.row{
+    gap: 10px;
+}
+
+.picture_box{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border: 2px solid var(--primary_text);
+    background-color: var(--primary_color);
+    border-radius: 10px;
+}
+.btn > img:hover {
+    filter: brightness(0.8);
+    color: var(--primary_text);
+}
+
+.dropdown-item:hover{
+    width: fit-content;
+    background-color: var(--light_text);
+    color: cornflowerblue;
+}
+
+.dropdown-item{
+    color: var(--primary_text);
+}
+
+.dropdown-menu{
+    background-color: var(--secondary_text);
+    color: var(--light_text);
+    border: 2px solid var(--primary_text);
+}
+
+.container{
+    background: var(--divider_color);
+}
+
+.nav-link{
+    color: var(--primary_color);
+}
+
+.nav-link:hover{
+    color: cornflowerblue;
+}
+
+
+.nav-link.active {
+    background: var(--primary_color)!important;
+    color: var(--light_text)!important;
+    text-align: center;
+}
+
+.bg-dark-purp{
+    background-color: var(--dark_primary);
+    width: auto;
+    font-size: xx-large;
+    border: 2px solid var(--primary_text);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+}
+.bg-dark-purp>p, .bg-lite>p{
+    font-size: large;
+    color: var(--light_text) !important;
+}
+.bg-dark-purp>h1, .bg-lite>h1{
+    font-size: xx-large;
+    color: var(--light_text) !important;
+}
+.bg-lite{
+    background-color: var(--primary_color);
+    width: 80%;
+    width: auto;
+    font-size: xx-large;
+    border: 2px solid var(--primary_text);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+
+.modal-container{
+    border: none;
+    background: none;
+    height: auto;
+    width: fit-content;
+    margin: none !important;
+}
+.modal-container button .btn{
+    padding: none !important;
+}
+
+.top_nav{
+    justify-content: space-around !important;
+    margin: auto !important;
+}
+
+.footer_container{
+    margin-top: 50px;
+}
+
+.navbar, .navbar-dark{
+    max-height: 100px;
+}
+
+.nav-item{
+    
+    width: fit-content;
+}
+.navbar-nav{
+    width: 80%;
+    justify-content: space-around !important;
+}
+.nav-link{
+    text-align: center !important;
+}
+.bs{
+    justify-content: center !important;
+    display: flex;
+    color: var(--light_text);
+}
+
+
+
+/* debugged using copilot just needed display flex */ 

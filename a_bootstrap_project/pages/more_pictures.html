@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Pictures</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript this and above are from w3 schools-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="icon" type="image/x-icon" href="../faviconfold/favicon.ico">
+<body>
+
+
+    <div class="container text-center">
+        <h2>More Pictures</h2>
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Pictures</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="more_pictures.html">More Pictures</a></li>
+                    <li><a class="dropdown-item" href="even_more_pictures.html">Even More Pictures!</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="what_do_they_like.html">What Do They Like?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="a_little_about_them.html">A Little About Them</a>
+            </li>
+            </li>
+        </ul>
+    </div>
+
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-12 text-center">
+                <h1></h1>
+            </div>
+        </div>
+
+                <div class="row picture_box container-fluid justify-content-center"> 
+
+
+                    <div class="col-5 col-sm-5 col-md-2 btn">
+                        <img src="../images/buts.jpeg" alt="cat attacking shoe" class="img-fluid img-thumbnail"
+                            onclick="change_on_click(0)">
+                    </div>
+                    <div class="col-5 col-sm-5 col-md-2 btn">
+                        <img src="../images/frank2.jpeg" alt="cat in tuna can bed" class="img-fluid img-thumbnail"
+                            onclick="change_on_click(1)">
+                    </div>
+                    <div class="col-5 col-sm-5 col-md-2 btn">
+                        <img src="../images/IMG_6749.jpeg" alt="cat spralled out" class="img-fluid img-thumbnail"
+                            onclick="change_on_click(2)">
+                    </div>
+                    <div class="col-5 col-sm-5 col-md-2 btn">
+                        <img src="../images/jayjay4.jpeg" alt="cat sitting in window" class="img-fluid img-thumbnail"
+                            onclick="change_on_click(3)">
+                    </div>
+                    <div class="col-5 col-sm-5 col-md-2 btn">
+                        <img src="../images/jayjay6.jpeg" alt="cat laying down" class="img-fluid img-thumbnail"
+                            onclick="change_on_click(4)">
+                    </div>
+
+                    <div class="col-5 col-sm-5 col-md-2 btn">
+                        <img src="../images/TobiStripes2rect.jpeg" alt="cat attacking shoe" class="img-fluid img-thumbnail" onclick="change_on_click(5)">
+                    </div>
+                    <div class="col-5 col-sm-5 col-md-2 btn">
+                        <img src="../images/buddybuddy.jpeg" alt="cat in tuna can bed" class="img-fluid img-thumbnail" onclick="change_on_click(6)">
+                    </div>
+                    <div class="col-5 col-sm-5 col-md-2 btn">
+                        <img src="../images/Tobi3.jpeg" alt="cat spralled out" class="img-fluid img-thumbnail" onclick="change_on_click(7)">
+                    </div>
+                    <div class="col-5 col-sm-5 col-md-2 btn">
+                        <img src="../images/taco2.jpeg" alt="cat sitting in window" class="img-fluid img-thumbnail" onclick="change_on_click(8)">
+                    </div>
+                    <div class="col-5 col-sm-5 col-md-2 btn">
+                        <img src="../images/taco1.jpeg" alt="cat laying down" class="img-fluid img-thumbnail" onclick="change_on_click(9)">
+                    </div>
+
+                </div>
+
+
+        <div class="row d-flex align-items-center justify-content-center">
+
+            <div class="col-1 col-md-1 d-flex justify-content-center">
+                <a class="btn" onclick="arrow_left()">
+                    <img src="../images/arrow_left.png" alt="Left arrow">
+                </a>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5 col-md-4 text-center">
+                <h1 id="title_display">Butts attacks!</h1>
+                <img src="../images/buts.jpeg" alt="big image" class="img-fluid img-thumbnail" id="large">
+                <p id="paragraph_display">
+                    Butts is a trouble maker, he likes to fight, he is eating my grandma's shoe in this picture
+                </p>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 d-flex justify-content-center">
+                <a class="btn" onclick="arrow_right()">
+                    <img src="../images/arrow_right.png" alt="Right arrow">
+                </a>
+            </div>
+
+        </div>
+
+    <script src="../my_java/on_click.js"></script>
+
+    <div class="row">
+        <div class="footer_container col-md-12">
+            <footer>
+                <p>&copy; Jacob Ryan Matsumoto 2025</p>
+            </footer>
+
+</body>
+
+</html>
