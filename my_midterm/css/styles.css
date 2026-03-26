@@ -210,7 +210,7 @@ footer {
 
 img {
     box-sizing: border-box;
-    width: 40%;
+    width: 80%;
     margin: 20px auto;
 }
 
@@ -373,4 +373,16 @@ p {
     }
 }
 
-.tasks
+.taskClass {
+    outline: #000000 solid 2px;
+}
+
+.entryField {
+    outline: #000000 solid 2px;
+}
+
+.taskRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

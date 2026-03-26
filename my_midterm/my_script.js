@@ -9,35 +9,77 @@ class toDoItem{
 
     displayTask() {
         return `Do by: ${this.date}<br>
-        Title: ${this.title}<br>
-        Description: ${this.description}<br>
-        Completion: ${this.completion}<br>
-        `;
+        Title: ${this.title} <br>
+        Description: ${this.description}
+        `; //removed done status as it is replaced with a clicking button
     }
 
 }
-//works but needs improvements, format date and make it work more than once
+
+/* 
+
+https://www.w3schools.com/jsref/met_document_createelement.asp -createElement from here
+
+https://www.geeksforgeeks.org/javascript/javascript-adding-a-class-name-to-the-element/ -className use from here
+
+https://www.w3schools.com/jsref/met_element_removeeventlistener.asp --good ref but didn't end up figuring out how to utilize it. Ended up scrapping it and finding a work around
+
+works but needs improvements, format date and make it work more than once 
+
+
+
+*/
+const tasks = []; //unused
+
 document.getElementById("submit").addEventListener("click", function(event){
     event.preventDefault();
 
     var taskDate = new Date(); //****TODO**** Format nicely
     var taskTitle = document.getElementById("title").value;
     var taskDescription = document.getElementById("description").value;
+
     var taskCompletetionStatus = false
 
-    const task5 = new toDoItem(taskDate, taskTitle, taskDescription, taskCompletetionStatus) 
-    //****TODO**** Make it so it can loop and keep making tasks, use array? Save to seperate file? Json? Pickling?
-    document.getElementById("class5").innerHTML = task5.displayTask();
+    const newTask = new toDoItem(taskDate, taskTitle, taskDescription, taskCompletetionStatus)
+
+    tasks.push(newTask)
+
+    
+    const taskP = document.createElement("p");
+    taskP.className = "taskClass";
+    taskP.innerHTML = newTask.displayTask();
+    document.getElementById("taskText").appendChild(taskP);
+
+
+    const taskStatus = document.createElement("img");
+    // const congrats = document.createElement("p");
+
+    if (newTask.completion == false) {
+        taskStatus.src = "images/x.png";
+        taskStatus.addEventListener("click", function(event) {
+        if (newTask.completion == false){
+            taskStatus.src = "images/check_mark.png";
+            newTask.completion = true;
+            // congrats.innerHTML = "Nicely done!";
+        }
+    });
+    }
+    else {
+        taskStatus.src = "images/check_mark.png";
+        // congrats.innerHTML = "Nicely done!";
+
+
+    }
+    
+    document.getElementById("doneStatus").appendChild(taskStatus);
+    // document.getElementById("doneStatus").appendChild(congrats);
 
 });
 
-//realistically it would pull this from a function and form and then put variables in but this is just a sample test
-const task1 = new toDoItem('3/5/2026', 'Clean Room', 'Clean up your room! Don\'t forget to vacuum', false );
-const task2 = new toDoItem('3/3/2026', 'Clean Bathroom', 'Clean up your bathroom! Careful with the bleach', true );
-const task3 = new toDoItem('3/7/2026', 'Calc Homework', 'Don\'t forget to do your calc homework', false );
-const task4 = new toDoItem('3/8/2026', 'Walk Dog', 'Take the dog for a walk today', false );
+//I commented out the congrats to see if I can fix it, can't they misalign when more get appended
 
-document.getElementById("class1").innerHTML = task1.displayTask();
-document.getElementById("class2").innerHTML = task2.displayTask();
-document.getElementById("class3").innerHTML = task3.displayTask();
-document.getElementById("class4").innerHTML = task4.displayTask();
+
+
+
+
+
