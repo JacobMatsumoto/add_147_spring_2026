@@ -167,13 +167,13 @@ body {
     color: var(--text-dark);
 }
 
-.container {
+/* .container {
     width: 90%;
     max-width: 1200px;
     min-width: 500px;
     margin: 20px auto;
     overflow: auto;
-}
+} */
 
 footer,
 main,
@@ -210,16 +210,18 @@ footer {
 
 img {
     box-sizing: border-box;
-    width: 80%;
+    width:100%;
     margin: 20px auto;
+    margin-left: 50px;
+    outline: #000000 1px;
 }
 
 header {
     background: var(--primary);
     color: var(--text-light);
-    min-height: 80px;
-    text-align: center;
+    text-align:center;
     margin-bottom: 20px;
+    font-size: xx-large;
 }
 
 nav {
@@ -374,12 +376,17 @@ p {
 }
 
 .taskClass {
-    outline: #000000 solid 2px;
+    justify-content: center;
+    align-items: center;
+
+    outline: #000000 solid 1px;
+    margin: 5px;
 }
 
-.entryField {
+/* .entryField {
     outline: #000000 solid 2px;
-}
+
+} */
 
 .taskRow{
     display: flex;
