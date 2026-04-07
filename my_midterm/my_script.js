@@ -51,7 +51,12 @@ document.getElementById("submit").addEventListener("click", function(event){
             hour = hour - 12;
 
     }
-    const min = taskDate.getMinutes();
+    let min = taskDate.getMinutes();
+
+    if (min < 10){
+        min = "0" + min;
+    }
+
     const formatedDate = `${year}/${month}/${day} ${hour}:${min} ${amOrPm}`;
     //All this here just generates a date and then formates it
 
