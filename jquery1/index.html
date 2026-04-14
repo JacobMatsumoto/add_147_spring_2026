@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+        $("h2").click(function(){
+            $(this).hide();
+        });
+        });
+
+        $(document).ready(function(){
+        $("#deleteParagraphs").click(function(){
+            $("p").hide();
+        });
+        });
+
+        $(document).ready(function(){
+        $("#deleteDiv").click(function(){
+        $("#my_div").hide();
+        });
+        });
+
+    </script>
+
+    <title>jquery1</title>
+</head>
+<body>
+    
+
+    <h2 id="my_h2">Click me to make me disapear!</h2>
+    <h2 id="my_h2_2">Or... click me to make me disapear!</h2>
+
+    <p id="p1">Paragraph1</p>
+
+
+    <p id="p2">Paragraph2</p>
+
+
+    <p id="p3">Paragraph3</p>
+
+    <div id="my_div">
+        Text inside a div
+    </div>
+
+    <button type='button' id="deleteParagraphs">Hide paragraphs</button>
+    <button type='button' id="deleteDiv">Remove divs</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
